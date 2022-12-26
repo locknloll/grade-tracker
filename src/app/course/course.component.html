@@ -1,0 +1,51 @@
+<header>
+    <mat-toolbar>
+        {{ course.number }} - {{ course.name }}
+    </mat-toolbar>
+    <mat-toolbar>
+        Grade:&nbsp;
+        <span *ngIf="courseMetrics[course.number] === undefined">N/A</span>
+        <span *ngIf="courseMetrics[course.number] !== undefined">
+            {{ courseMetrics[course.number].numericGrade}} ({{courseMetrics[course.number].grade}})
+        </span>
+        &nbsp;&nbsp;
+        <button mat-raised-button
+            color="primary" 
+            (click)="newItem(course)">
+            Add Item
+        </button>
+    </mat-toolbar>
+</header>
+<div class="container">
+    <table mat-table [dataSource]="groupedItems[course.number]" class="mat-elevation-z8">
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let item"> {{ item.name }} </td>
+        </ng-container>
+        <ng-container matColumnDef="grade">
+            <th mat-header-cell *matHeaderCellDef> Grade </th>
+            <td mat-cell *matCellDef="let item"> {{ item.grade }} </td>
+        </ng-container>
+        <ng-container matColumnDef="outOf">
+            <th mat-header-cell *matHeaderCellDef> Out Of </th>
+            <td mat-cell *matCellDef="let item"> {{ item.outOf }} </td>
+        </ng-container>
+        <ng-container matColumnDef="weight">
+            <th mat-header-cell *matHeaderCellDef> Weight </th>
+            <td mat-cell *matCellDef="let item"> {{ item.weight }} </td>
+        </ng-container>
+        <ng-container matColumnDef="actions">
+            <th mat-header-cell *matHeaderCellDef>Actions</th>
+            <td mat-cell *matCellDef="let item">
+                <button mat-icon-button (click)="editItem(item)">
+                    <mat-icon>mode_edit</mat-icon>
+                </button>
+                <button mat-icon-button (click)="deleteItem(item.id)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>

@@ -1,0 +1,32 @@
+<table>
+    <tr><td>
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="data.item.name" />
+        </mat-form-field>
+    </td></tr>
+    <tr><td>
+        <mat-form-field>
+            <mat-label>Grade</mat-label>
+            <input matInput type="number" [(ngModel)]="data.item.grade" />
+        </mat-form-field>
+    </td></tr>
+    <tr><td>
+        <mat-form-field>
+            <mat-label>Out Of</mat-label>
+            <input matInput type="number" [(ngModel)]="data.item.outOf" />
+        </mat-form-field>
+    </td></tr>
+    <tr><td>
+        <mat-form-field>
+            <mat-label>Weight</mat-label>
+            <input matInput type="number" [(ngModel)]="data.item.weight" />
+        </mat-form-field>
+    </td></tr>
+    <tr><td>
+        <div mat-dialog-actions>
+            <button mat-button [mat-dialog-close]="{ item: data.item }">OK</button>
+            <button mat-button (click)="cancel()">Cancel</button>
+        </div>
+    </td></tr>
+</table>

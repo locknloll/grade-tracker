@@ -13,16 +13,21 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { CourseDialogComponent } from './course-dialog/course-dialog.component';
+import { CourseComponent } from './course/course.component';
+import { ItemDialogComponent } from './item-dialog/item-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    CourseDialogComponent
+    CourseDialogComponent,
+    CourseComponent,
+    ItemDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +38,7 @@ import { CourseDialogComponent } from './course-dialog/course-dialog.component';
     MatTableModule,
     MatDialogModule,
     MatInputModule,
+    MatButtonModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     FormsModule
