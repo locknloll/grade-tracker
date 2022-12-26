@@ -1,0 +1,26 @@
+[
+    {
+      "number": "cs101",
+      "creditHours": 3,
+      "name": "introduction to comp sci",
+      "id": "5a4CYiBmPkBDYc8G4ikO"
+    },
+    {
+      "number": "phys101",
+      "name": "introduction to physics",
+      "creditHours": 3,
+      "id": "NDg8qvuBASOaNJsuOpE4"
+    },
+    {
+      "name": "college algebra",
+      "number": "math101",
+      "creditHours": 3,
+      "id": "RMLo8c8spyuiFqDaPCav"
+    },
+    {
+      "name": "macroeconomics",
+      "number": "econ101",
+      "creditHours": 3,
+      "id": "YtDXhlg02fbeySErgb98"
+    }
+]

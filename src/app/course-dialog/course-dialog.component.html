@@ -1,0 +1,26 @@
+<table>
+    <tr><td>
+      <mat-form-field>
+        <mat-label>Course No.</mat-label>
+        <input matInput [(ngModel)]="data.course.number" />
+      </mat-form-field>
+    </td></tr>
+    <tr><td>
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="data.course.name" />
+      </mat-form-field>
+    </td></tr>
+    <tr><td>
+      <mat-form-field>
+        <mat-label>Credit Hours</mat-label>
+        <input matInput type="number" [(ngModel)]="data.course.creditHours" />
+      </mat-form-field>
+    </td></tr>
+    <tr><td>
+      <div mat-dialog-actions>
+        <button mat-raised-button [mat-dialog-close]="{ course: data.course }">OK</button>
+        <button mat-raised-button (click)="cancel()">Cancel</button>
+      </div>
+    </td></tr>
+  </table>

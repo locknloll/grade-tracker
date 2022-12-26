@@ -1,0 +1,262 @@
+[
+    {
+      "grade": 90,
+      "weight": 20,
+      "course": {
+        "id": "5a4CYiBmPkBDYc8G4ikO",
+        "creditHours": 3,
+        "number": "cs101",
+        "name": "introduction to comp sci"
+      },
+      "name": "exam 1",
+      "outOf": 100,
+      "id": "3UazINlH9G2JPhOdGuco"
+    },
+    {
+      "weight": 5,
+      "outOf": 10,
+      "course": {
+        "name": "introduction to comp sci",
+        "id": "5a4CYiBmPkBDYc8G4ikO",
+        "number": "cs101",
+        "creditHours": 3
+      },
+      "name": "assignment 3",
+      "grade": 10,
+      "id": "BXOOBKCN2U18WLrCOmqH"
+    },
+    {
+      "grade": 100,
+      "name": "assignment 1",
+      "outOf": 100,
+      "course": {
+        "name": "college algebra",
+        "creditHours": 3,
+        "id": "RMLo8c8spyuiFqDaPCav",
+        "number": "math101"
+      },
+      "weight": 10,
+      "id": "C4p9ZjpGBCCAwFeDAEW6"
+    },
+    {
+      "course": {
+        "name": "macroeconomics",
+        "id": "YtDXhlg02fbeySErgb98",
+        "number": "econ101",
+        "creditHours": 3
+      },
+      "outOf": 10,
+      "name": "quiz 1",
+      "weight": 10,
+      "grade": 5,
+      "id": "CzEDlJcEsTcvWboy4IT4"
+    },
+    {
+      "name": "quiz 2",
+      "outOf": 10,
+      "course": {
+        "number": "econ101",
+        "name": "macroeconomics",
+        "id": "YtDXhlg02fbeySErgb98",
+        "creditHours": 3
+      },
+      "weight": 10,
+      "grade": 8,
+      "id": "Dpbt5pTilzyAlOsAh51F"
+    },
+    {
+      "name": "exam 1",
+      "grade": 70,
+      "outOf": 100,
+      "course": {
+        "number": "phys101",
+        "creditHours": 3,
+        "id": "NDg8qvuBASOaNJsuOpE4",
+        "name": "introduction to physics"
+      },
+      "weight": 25,
+      "id": "FAoUjgqt14QQGY9EyBK0"
+    },
+    {
+      "name": "lab 1",
+      "outOf": 10,
+      "weight": 5,
+      "course": {
+        "name": "introduction to physics",
+        "number": "phys101",
+        "creditHours": 3,
+        "id": "NDg8qvuBASOaNJsuOpE4"
+      },
+      "grade": 9,
+      "id": "Il4XVIzKgqyT7ARWvMjK"
+    },
+    {
+      "grade": 10,
+      "name": "quiz 1",
+      "outOf": 10,
+      "course": {
+        "creditHours": 3,
+        "number": "math101",
+        "id": "RMLo8c8spyuiFqDaPCav",
+        "name": "college algebra"
+      },
+      "weight": 10,
+      "id": "JX8r31013bF9cxNyBV1J"
+    },
+    {
+      "outOf": 10,
+      "weight": 15,
+      "grade": 8,
+      "course": {
+        "id": "YtDXhlg02fbeySErgb98",
+        "number": "econ101",
+        "name": "macroeconomics",
+        "creditHours": 3
+      },
+      "name": "assignment 2",
+      "id": "LLNs9wuvL0N8sEqoVTUT"
+    },
+    {
+      "grade": 8,
+      "name": "assignment 1",
+      "outOf": 10,
+      "course": {
+        "id": "YtDXhlg02fbeySErgb98",
+        "name": "macroeconomics",
+        "creditHours": 3,
+        "number": "econ101"
+      },
+      "weight": 15,
+      "id": "OH5UHIhEnq7d7HgqofC8"
+    },
+    {
+      "course": {
+        "creditHours": 3,
+        "number": "phys101",
+        "name": "introduction to physics",
+        "id": "NDg8qvuBASOaNJsuOpE4"
+      },
+      "name": "assignment 2",
+      "grade": 6,
+      "outOf": 10,
+      "weight": 10,
+      "id": "PQdmr4Uw8u9i743QWTIY"
+    },
+    {
+      "course": {
+        "name": "introduction to comp sci",
+        "creditHours": 3,
+        "id": "5a4CYiBmPkBDYc8G4ikO",
+        "number": "cs101"
+      },
+      "outOf": 10,
+      "weight": 5,
+      "name": "assignment 1",
+      "grade": 8,
+      "id": "QKrTdeylMb8lIUqN3fE6"
+    },
+    {
+      "outOf": 100,
+      "name": "exam 1",
+      "grade": 50,
+      "weight": 25,
+      "course": {
+        "id": "RMLo8c8spyuiFqDaPCav",
+        "name": "college algebra",
+        "number": "math101",
+        "creditHours": 3
+      },
+      "id": "QXpkXXUbW8HcvMP7MkPc"
+    },
+    {
+      "grade": 9,
+      "name": "assignment 2",
+      "course": {
+        "name": "introduction to comp sci",
+        "id": "5a4CYiBmPkBDYc8G4ikO",
+        "creditHours": 3,
+        "number": "cs101"
+      },
+      "outOf": 10,
+      "weight": 5,
+      "id": "Qswo1fn55b5OEpdb3e4X"
+    },
+    {
+      "name": "lab 2",
+      "outOf": 10,
+      "grade": 9,
+      "weight": 5,
+      "course": {
+        "creditHours": 3,
+        "name": "introduction to physics",
+        "id": "NDg8qvuBASOaNJsuOpE4",
+        "number": "phys101"
+      },
+      "id": "ReFZQlvqzQTvq9tisrq9"
+    },
+    {
+      "outOf": 10,
+      "weight": 10,
+      "course": {
+        "creditHours": 3,
+        "id": "NDg8qvuBASOaNJsuOpE4",
+        "number": "phys101",
+        "name": "introduction to physics"
+      },
+      "name": "assignment 1",
+      "grade": 10,
+      "id": "UrGdOJDVQy9SHwQJnkY9"
+    },
+    {
+      "weight": 10,
+      "course": {
+        "id": "5a4CYiBmPkBDYc8G4ikO",
+        "creditHours": 3,
+        "name": "introduction to comp sci",
+        "number": "cs101"
+      },
+      "name": "quiz 1",
+      "grade": 7,
+      "outOf": 10,
+      "id": "nFuzRH9qFAUKRR8Jwype"
+    },
+    {
+      "course": {
+        "creditHours": 3,
+        "id": "RMLo8c8spyuiFqDaPCav",
+        "name": "college algebra",
+        "number": "math101"
+      },
+      "weight": 10,
+      "grade": 100,
+      "outOf": 100,
+      "name": "assignment 2",
+      "id": "vr2HkUaI9DYmRYeadlL1"
+    },
+    {
+      "outOf": 100,
+      "grade": 50,
+      "weight": 25,
+      "course": {
+        "id": "RMLo8c8spyuiFqDaPCav",
+        "number": "math101",
+        "creditHours": 3,
+        "name": "college algebra"
+      },
+      "name": "exam 2",
+      "id": "wAe76qXPwnRiIAwAOKNe"
+    },
+    {
+      "outOf": 10,
+      "weight": 10,
+      "course": {
+        "name": "introduction to comp sci",
+        "creditHours": 3,
+        "number": "cs101",
+        "id": "5a4CYiBmPkBDYc8G4ikO"
+      },
+      "name": "quiz 2",
+      "grade": 7,
+      "id": "zQQfpQn6zYHOJov0033w"
+    }
+]

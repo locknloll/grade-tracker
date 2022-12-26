@@ -1,0 +1,46 @@
+<header>
+    <mat-toolbar>
+        Overall GPA: {{ courseMetrics.gpa }}
+        &nbsp;&nbsp;
+        <button mat-raised-button
+            color="primary"
+            (click)="newCourse()">
+            Add Course
+        </button>
+    </mat-toolbar>
+</header>
+<div class="container">
+    <table mat-table [dataSource]="courses" class="mat-elevation-z8">
+        <ng-container matColumnDef="number">
+            <th mat-header-cell *matHeaderCellDef>No.</th>
+            <td mat-cell *matCellDef="let course">{{ course.number }}</td>
+        </ng-container>
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let course">{{ course.name }}</td>
+        </ng-container>
+        <ng-container matColumnDef="creditHours">
+            <th mat-header-cell *matHeaderCellDef> Credit Hours </th>
+            <td mat-cell *matCellDef="let course">{{ course.creditHours }}</td>
+        </ng-container>
+        <ng-container matColumnDef="grade">
+            <th mat-header-cell *matHeaderCellDef> Grade </th>
+            <td mat-cell *matCellDef="let course">
+                {{ courseMetrics[course.number] === undefined ? 'N/A' : courseMetrics[course.number].grade }}
+            </td>
+        </ng-container>
+        <ng-container matColumnDef="actions">
+            <th mat-header-cell *matHeaderCellDef>Actions</th>
+            <td mat-cell *matCellDef="let course">
+                <button mat-icon-button (click)="editCourse(course)">
+                    <mat-icon>mode_edit</mat-icon>
+                </button>
+                <button mat-icon-button (click)="deleteCourse(course)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>
