@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "grade-tracker-12e57",
+    "public": "dist/grade-tracker",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
